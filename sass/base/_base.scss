@@ -1,0 +1,44 @@
+.logo {
+    width: 50%;
+    object-fit: cover;
+    padding: $padding-mini;
+}
+
+.accueil {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.body {
+    width: $max-width;
+    margin: $null;
+}
+
+.ville {
+    background-color: $grey;
+}
+.explore {
+    background-color: $light-grey;
+}
+
+.restaurants {
+    background-color: $light-grey;
+}
+
+.footer {
+    background-color: $dark-grey;
+}
+.balise {
+    background-color: $light-grey;
+}
+
+.restimage {
+    object-fit: cover;
+    width: $max-width;
+}
+
+.logofoot {
+    width: 20%;
+    color: white;
+}
