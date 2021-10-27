@@ -1,44 +1,121 @@
-.logo {
-    width: 50%;
-    object-fit: cover;
-    padding: $padding-mini;
+.body {
+    font-family: 'Roboto';
+    width: $max-width;
+    margin: $null;
+    section{
+        padding: $mini;
+    }
 }
 
 .accueil {
     text-align: center;
     display: flex;
     flex-direction: column;
-}
-
-.body {
-    width: $max-width;
-    margin: $null;
-}
-
-.ville {
-    background-color: $grey;
-}
-.explore {
-    background-color: $light-grey;
+    &__logo {
+        width: 50%;
+        object-fit: cover;
+        padding: $mini;
+    }
+    &__logodiv {
+        box-shadow: 0 0 1em #0000008a;
+        position: relative;
+    }
+    &__ville {
+        background-color: $grey;
+        padding: 0.8em;
+    }       
+    &__explore {
+        background-color: $light-grey;
+        padding: $mini;
+    }
+    &__btn {
+        background: linear-gradient(to bottom right, $colour-secondary, $colour-primary);
+        border-radius: 2em;
+        height: 3em;
+        border: 0;
+        box-shadow: 0 0.3rem 0.2rem #0000008a;
+        color: $white;
+        font-weight: bold;
+        padding: 0 1.5em 0 1.5em;
+        margin-bottom: 1em;
+    }
 }
 
 .restaurants {
     background-color: $light-grey;
+    &__new{
+        position: absolute;
+        background-color: $colour-tertiary;
+        font-weight: bold;
+        color: darken($color: $colour-tertiary, $amount: 30);
+        padding: 0.2em 0.7em 0.2em 0.7em;
+        border-radius: 0.2em;
+        right: $mini;
+        margin: $mini;
+    }
+    &__article{
+        display: flex;
+        flex-wrap: wrap;
+        background-color: white;
+        border-radius: $mini;
+        overflow: hidden;
+        height: 15em;
+        margin-bottom: 1em;
+        box-shadow: 0 0 1rem #0000002e;
+    }
+    &__text{
+        flex: 1;
+        margin: $null;
+        p, h4{
+            margin: $null;
+            padding-left: $mini;
+        }
+        h4{
+            padding-top: 0.5em;
+        }
+    }
+    &__image{
+        object-fit: cover;
+        width: $max-width;
+        height: 75%;
+    }
+    
 }
 
-.footer {
-    background-color: $dark-grey;
-}
-.balise {
-    background-color: $light-grey;
-}
-
-.restimage {
-    object-fit: cover;
-    width: $max-width;
-}
-
-.logofoot {
-    width: 20%;
-    color: white;
+.detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__titre {
+        align-self: flex-start;
+    }
+    &__balise {
+        display: flex;
+        background-color: $light-grey;
+        text-align: center;
+        border-radius: $mini;
+        margin-bottom: $mini;
+        height: 4em;
+        width: 95%;
+        align-items: center;
+        font-weight: bold;
+        &:hover {
+            background-color: lighten($color: $colour-primary, $amount: 37);
+        }
+    }
+    &__number {
+        background-color: $colour-primary;
+        color: $white;
+        border-radius: 50%;
+        height: 1.5em;
+        width: 1.5em;
+        position: absolute;
+        left: 1em;
+        line-height: 1.5em;
+    }
+    &__text {
+        padding-left: 2em;
+        padding-right: 2em;
+        flex: 1;
+    }
 }

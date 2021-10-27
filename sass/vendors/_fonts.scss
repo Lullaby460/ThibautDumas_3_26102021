@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&family=Shrikhand&display=swap');
+
+.material-icons {
+    font-size: 1.2em !important;
+}
+
+.heart {
+    padding: 0.7em 1em 0.7em 0;
+    color: black;
+    font-size: 1.5em !important;
+}
+
+.white {
+    color: $white;
+    font-size: 0.8em !important;
+}
+
+.detail__art {
+    color: #7e7e7e;
+    padding-left: 2em;
+    & + .detail__balise:hover{
+        color: $colour-primary;
+    }
+}

@@ -1,0 +1,14 @@
+.footer {
+    background-color: $dark-grey;
+    padding: 1em 0 2em 1.5em;
+    color: $white;
+    h3 {
+        font-family: 'Shrikhand';
+        color: $white;
+    }
+    &__list {
+        margin: $null;
+        padding: $null;
+        list-style-type: none;
+    }
+}
