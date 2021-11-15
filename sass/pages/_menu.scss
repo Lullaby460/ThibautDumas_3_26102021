@@ -1,0 +1,42 @@
+.accueil__menu {
+    margin-bottom: -2em;
+}
+
+.menu {
+    position:relative;
+    border-radius: 1em;
+    background-color: $light-grey;
+    h1 {
+        font-family: 'Shrikhand';
+    }
+    &__titre {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__plat {
+        display: flex;
+        flex-direction: row;
+        background-color: $white;
+        border-radius: 1em;
+        padding: 1em;
+        justify-content: space-around;
+        margin-bottom: 1em;
+        box-shadow: 0 0 1em $grey;
+    }
+    &__txt {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        text-overflow: ellipsis;
+        & h3 {
+        margin: 0;
+        }
+    }
+    &__main {
+        font-weight: bold;
+    }
+    &__btn {
+        margin-top: 2em;
+        text-align: center;
+    }
+}

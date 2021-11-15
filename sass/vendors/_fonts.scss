@@ -18,7 +18,11 @@
 .detail__art {
     color: #7e7e7e;
     padding-left: 2em;
-    & + .detail__balise:hover{
-        color: $colour-primary;
-    }
+}
+
+.accueil__back{
+    font-size: 1.5em;
+    left: 1em;
+    top: 1em;
+    position: absolute;
 }
