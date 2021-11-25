@@ -8,6 +8,10 @@
     padding: 0.7em 1em 0.7em 0;
     color: black;
     font-size: 1.5em !important;
+    &:focus-visible {
+        color: $btn-color;
+        background-color: $colour-primary;
+    }
 }
 
 .white {
@@ -22,7 +26,7 @@
 
 .accueil__back{
     font-size: 1.5em;
-    left: 1em;
-    top: 1em;
+    left: $mini;
+    top: $mini;
     position: absolute;
 }

@@ -46,10 +46,10 @@
         display: flex;
         flex-wrap: wrap;
         background-color: white;
-        border-radius: $mini;
+        border-radius: $radius;
         overflow: hidden;
         height: 15em;
-        margin-bottom: 1em;
+        margin-bottom: $mini;
         box-shadow: 0 0 1rem #0000002e;
     }
     &__text{
@@ -75,6 +75,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: $white;
     &__titre {
         align-self: flex-start;
     }
@@ -82,7 +83,7 @@
         display: flex;
         background-color: $light-grey;
         text-align: center;
-        border-radius: $mini;
+        border-radius: $radius;
         margin-bottom: $mini;
         height: 4em;
         width: 95%;
@@ -103,7 +104,7 @@
         height: 1.5em;
         width: 1.5em;
         position: absolute;
-        left: 1em;
+        left: $mini;
         line-height: 1.5em;
     }
     &__text {

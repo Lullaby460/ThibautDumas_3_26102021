@@ -4,7 +4,7 @@
 
 .menu {
     position:relative;
-    border-radius: 1em;
+    border-radius: $radius;
     background-color: $light-grey;
     h1 {
         font-family: 'Shrikhand';
@@ -17,16 +17,18 @@
         display: flex;
         flex-direction: row;
         background-color: $white;
-        border-radius: 1em;
-        padding: 1em;
+        border-radius: $radius;
+        padding: $mini;
         justify-content: space-around;
-        margin-bottom: 1em;
-        box-shadow: 0 0 1em $grey;
+        margin-bottom: $mini;
+        box-shadow: 0 0 $mini $grey;        
     }
     &__txt {
         display: flex;
         flex-direction: column;
         flex: 1;
+        white-space: nowrap;
+        overflow: hidden;
         text-overflow: ellipsis;
         & h3 {
         margin: 0;
