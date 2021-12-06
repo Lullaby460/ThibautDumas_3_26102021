@@ -5,13 +5,20 @@
 }
 
 .heart {
-    padding: 0.7em 1em 0.7em 0;
+    margin: $mini;
     color: black;
     font-size: 1.5em !important;
-    &:focus-visible {
-        color: $btn-color;
-        background-color: $colour-primary;
+    &:active {
+        color: $colour-primary;
+        fill: $white;
     }
+}
+
+.fa-check-circle{
+    color: $white;
+    font-size: 3em;
+    margin-top : 63px;
+    margin-right : -130px;
 }
 
 .white {

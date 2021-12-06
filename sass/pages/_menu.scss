@@ -13,32 +13,58 @@
         display: flex;
         justify-content: space-between;
     }
-    &__plat {
-        display: flex;
-        flex-direction: row;
-        background-color: $white;
-        border-radius: $radius;
-        padding: $mini;
-        justify-content: space-around;
-        margin-bottom: $mini;
-        box-shadow: 0 0 $mini $grey;        
-    }
-    &__txt {
-        display: flex;
-        flex-direction: column;
-        flex: 1;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        & h3 {
-        margin: 0;
-        }
-    }
     &__main {
         font-weight: bold;
     }
     &__btn {
         margin-top: 2em;
         text-align: center;
+    }
+
+
+
+
+
+
+
+
+    &__plat{
+        display: flex;
+        padding: $mini;
+        background: $white;
+        margin: 20px auto;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        text-align: center;
+        transition: .2s;
+        cursor: pointer;
+        border-radius: $radius;
+        box-shadow: 0px 1px 2px rgba(0,0,0,.2);
+        &:hover {
+            .menu__chkbtn{
+                right: 0;
+            }
+            .menu__price{
+                margin-right : 65px;
+            }
+            .fa-check-circle{
+                transition: check ease-in-out;
+            }
+        }
+    }
+    &__chkbtn{
+        position: relative;
+        width: 200px;
+        height: 100%;
+        background: $colour-tertiary;
+        right: -100%;
+        transition: .3s;
+    }
+    &__price{
+        transition : .3s;
+    }
+    &__test{
+        display: flex;
     }
 }

@@ -1,6 +1,6 @@
 .body {
     font-family: 'Roboto';
-    width: $max-width;
+    width: $max;
     margin: $null;
     section{
         padding: $mini;
@@ -65,7 +65,7 @@
     }
     &__image{
         object-fit: cover;
-        width: $max-width;
+        width: $max;
         height: 75%;
     }
     
@@ -103,9 +103,8 @@
         border-radius: 50%;
         height: 1.5em;
         width: 1.5em;
-        position: absolute;
-        left: $mini;
         line-height: 1.5em;
+        margin-left: -.6em;
     }
     &__text {
         padding-left: 2em;
