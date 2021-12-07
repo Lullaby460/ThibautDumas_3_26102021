@@ -23,3 +23,71 @@
     transform: rotate(0deg);
   }
 }
+
+
+
+
+
+
+
+
+  
+.effect {
+  text-align: center;
+  position: relative;
+  text-transform: capitalize;
+  margin: 1em 0;
+  border-radius: $radius;
+  border: 1px solid black;
+  overflow: hidden;
+  display: flex;
+}
+
+.button-effect {
+  display: flex;
+  flex-direction: column; 
+}
+
+.main{
+  background-color: $white;
+  border: 1px solid $grey;
+  display: flex;
+  border-radius: 1.5em;
+  padding: 1em;
+  overflow: hidden;
+  position: relative;
+  margin: 1em 0;
+  &:hover .check{
+    right: 0;
+  }
+  &:hover .prix{
+    text-indent: -5em;
+  }
+  &:hover .fa-check-circle{
+    animation: check 0.5s ease-in-out;
+  }
+}
+
+.descriptif{
+  width: 70%;
+}
+
+.prix{
+  width: 30%;
+  transition: all 0.2s linear 0s;
+}
+
+.check{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $white;
+  font-size: 2em;
+  background-color: $colour-tertiary;
+  width: 4em;
+  height: 100%;
+  top: 0;
+  right: -5em;
+  transition: all 0.2s linear 0s;
+}
