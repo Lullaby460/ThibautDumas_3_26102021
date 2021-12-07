@@ -10,5 +10,17 @@
         margin: $null;
         padding: $null;
         list-style-type: none;
+
+        @include pc {
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+        }
+    }
+    @include pc {
+        height: 10em;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
 }

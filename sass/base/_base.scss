@@ -15,6 +15,9 @@
         width: 50%;
         object-fit: cover;
         padding: $mini;
+        @include pc{
+            width: 25%;
+        }
     }
     &__logodiv {
         box-shadow: 0 0 1em #0000008a;
@@ -32,6 +35,15 @@
 
 .restaurants {
     background-color: $light-grey;
+    
+    @include tablette-pc {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-around;
+    }
+    & h3 {
+        width: 100%;
+    }
     &__new{
         position: absolute;
         background-color: $colour-tertiary;
@@ -51,6 +63,12 @@
         height: 15em;
         margin-bottom: $mini;
         box-shadow: 0 0 1rem #0000002e;
+
+        @include tablette-pc {
+            width: 45%;
+            flex-direction: row;
+        }
+
     }
     &__text{
         flex: 1;

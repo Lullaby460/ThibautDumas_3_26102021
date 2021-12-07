@@ -14,3 +14,22 @@ $null: 0;
 $mini: 1em;
 
 $radius: 1em;
+
+
+
+$breakpoints: (
+    mobile: 599px,
+    pc: 900px
+);
+
+@mixin tablette-pc {
+    @media screen and (min-width: map-get($breakpoints, mobile)){
+        @content;
+    }
+}
+
+@mixin pc {
+    @media screen and (min-width: map-get($breakpoints, pc)){
+        @content;
+    }
+}

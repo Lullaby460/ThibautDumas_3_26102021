@@ -8,6 +8,7 @@
     font-weight: bold;
     padding: 0 1.5em 0 1.5em;
     margin-bottom: $mini;
+    cursor: pointer;
     &__center {
         display: flex;
         justify-content: center;
@@ -27,36 +28,15 @@
 
 
 
-
-
-
-
-  
-.effect {
-  text-align: center;
-  position: relative;
-  text-transform: capitalize;
-  margin: 1em 0;
-  border-radius: $radius;
-  border: 1px solid black;
-  overflow: hidden;
-  display: flex;
-}
-
-.button-effect {
-  display: flex;
-  flex-direction: column; 
-}
-
 .main{
   background-color: $white;
   border: 1px solid $grey;
   display: flex;
   border-radius: 1.5em;
-  padding: 1em;
+  padding: $mini;
   overflow: hidden;
   position: relative;
-  margin: 1em 0;
+  margin: $mini 0;
   &:hover .check{
     right: 0;
   }
@@ -66,6 +46,11 @@
   &:hover .fa-check-circle{
     animation: check 0.5s ease-in-out;
   }
+
+
+  @include tablette-pc{
+    width: 70%;    
+  }
 }
 
 .descriptif{
@@ -73,6 +58,10 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space:nowrap;
+  cursor: pointer;
+  h3 {
+    margin: 0em;
+  }
 }
 
 .prix{
