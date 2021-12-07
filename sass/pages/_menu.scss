@@ -20,34 +20,4 @@
         margin-top: 2em;
         text-align: center;
     }
-
-
-    &__plat {
-        transition: all 0.2s linear 0s;
-        &:before {
-            content: "\f058";
-            background-color: $colour-tertiary;
-            color: $white;
-            font-family: FontAwesome;
-            font-size: 2em;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: absolute;
-            right: -5em;
-            width: 3em;
-            height: 100%;
-            transition: all 0.2s linear 0s;
-            text-align: center;
-        }
-        &:hover {
-            text-indent: -5em;
-            
-            &:before {
-              right: 0;
-              text-indent: 0;
-              animation: check 0.5s;
-            }
-        }
-    }
 }

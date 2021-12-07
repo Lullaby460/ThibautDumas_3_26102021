@@ -61,7 +61,7 @@
     right: 0;
   }
   &:hover .prix{
-    text-indent: -5em;
+    text-indent: -10em;
   }
   &:hover .fa-check-circle{
     animation: check 0.5s ease-in-out;
@@ -70,11 +70,18 @@
 
 .descriptif{
   width: 70%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space:nowrap;
 }
 
 .prix{
   width: 30%;
   transition: all 0.2s linear 0s;
+  background-color: $white;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
 
 .check{
