@@ -4,32 +4,23 @@ $colour-tertiary: #99E2D0;
 $grey: #EAEAEA;
 $light-grey: #F6F6F6;
 $dark-grey: #353535;
-$white: #fff;
 $btn-color: linear-gradient(to bottom right, $colour-secondary, $colour-primary);
 
-$max: 100%;
-
-$null: 0;
-
-$mini: 1em;
-
-$radius: 1em;
 
 
+//breakpoint pour les tailles d'écran//
 
 $breakpoints: (
     mobile: 599px,
-    pc: 900px
+    pc: 900px,
+    wide: 1440px
 );
 
-@mixin tablette-pc {
-    @media screen and (min-width: map-get($breakpoints, mobile)){
-        @content;
-    }
-}
 
-@mixin pc {
-    @media screen and (min-width: map-get($breakpoints, pc)){
-        @content;
-    }
-}
+
+
+//variables du loader//
+
+$size: 3vh;
+$anim-dur: 1000ms;
+$anim-delay: $anim-dur / 5;

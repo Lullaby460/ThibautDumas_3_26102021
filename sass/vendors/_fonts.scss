@@ -5,17 +5,16 @@
 }
 
 .heart {
-    margin: $mini;
+    margin: .5em;
     color: black;
     font-size: 1.5em !important;
     &:active {
         color: $colour-primary;
-        fill: $white;
     }
 }
 
 .white {
-    color: $white;
+    color: #fff;
     font-size: 0.8em !important;
 }
 
@@ -26,7 +25,9 @@
 
 .accueil__back{
     font-size: 1.5em;
-    left: $mini;
-    top: $mini;
-    position: absolute;
+    position: fixed;
+    left: 1.5em;
+    top: 1em;
+    text-decoration: none;
+    color: black;
 }

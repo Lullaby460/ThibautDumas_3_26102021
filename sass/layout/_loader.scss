@@ -1,8 +1,3 @@
-$size: 3vh;
-$anim-dur: 1000ms;
-$anim-delay: $anim-dur / 5;
-
-
 .container{
     height: 100%;
     display: flex;
@@ -25,7 +20,7 @@ $anim-delay: $anim-dur / 5;
     justify-content: space-evenly;
     &__bar {
         background: $btn-color;
-        height: $max;
+        height: 100%;
         width: $size;
         animation: bars $anim-dur backwards infinite ease-in-out alternate;
         @for $i from 1 through 5 {

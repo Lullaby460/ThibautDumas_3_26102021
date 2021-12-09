@@ -1,0 +1,17 @@
+@mixin tablette-pc {
+    @media screen and (min-width: map-get($breakpoints, mobile)){
+        @content;
+    }
+}
+
+@mixin pc {
+    @media screen and (min-width: map-get($breakpoints, pc)){
+        @content;
+    }
+}
+
+@mixin wide {
+    @media screen and (min-width: map-get($breakpoints, wide)){
+        @content;
+    }
+}

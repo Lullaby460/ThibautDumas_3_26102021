@@ -1,14 +1,14 @@
 .footer {
     background-color: $dark-grey;
-    padding: $mini 0 2em 1.5em;
-    color: $white;
+    padding: 1em 0 2em 1.5em;
+    color: #fff;
     h3 {
         font-family: 'Shrikhand';
-        color: $white;
+        color: #fff;
     }
     &__list {
-        margin: $null;
-        padding: $null;
+        margin: 0;
+        padding: 0;
         list-style-type: none;
 
         @include pc {

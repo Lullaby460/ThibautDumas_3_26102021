@@ -1,13 +1,16 @@
 .accueil__menu {
     margin-bottom: -2em;
     @include pc {
-        margin-bottom: -5em;
+        margin-bottom: -10em;
+    }
+    @include wide {
+        margin-bottom: -20em;
     }
 }
 
 .menu {
     position:relative;
-    border-radius: $radius;
+    border-radius: 1em;
     background-color: $light-grey;
     h1 {
         font-family: 'Shrikhand';
