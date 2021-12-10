@@ -35,6 +35,19 @@
         background-color: $light-grey;
         padding: 1em;
     }
+    &__img {
+        object-fit: cover;
+        &__long{
+            object-fit: cover;
+            height: 15em;
+            @include pc{
+                height: 30em;
+            }
+            @include wide{
+                height: 50em;
+            }
+        }
+    }
 }
 
 .restaurants {

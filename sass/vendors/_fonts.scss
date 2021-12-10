@@ -8,8 +8,27 @@
     margin: .5em;
     color: black;
     font-size: 1.5em !important;
-    &:active {
-        color: $colour-primary;
+    transition: all 0.2s linear 0s;
+    opacity: 1;
+    position: absolute;
+    right: 1em;
+}
+.heart-full {
+    margin: .5em;
+    color: $colour-primary;
+    font-size: 1.5em !important;
+    transition: all 0.2s linear 0s;
+    opacity: 0;
+    position: absolute;
+    right: 1em;
+}
+.material {
+    position: relative;
+    &:hover .heart-full {
+        opacity: 1;
+    }
+    &:hover .heart {
+        opacity: 0;
     }
 }
 
