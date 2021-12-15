@@ -28,15 +28,35 @@
     }
 
     &__side {
+
+        // animation d'apparition du texte //
+
+        animation: menu_hide $anim-dur ease-in-out both;
+        @for $i from 1 through 3 {
+            &--#{$i} {
+                animation-delay: $delay + ( $anim-dur * $i );
+            }
+        }
+
+
         @include tablette-pc{
             display: flex;
             align-items: center;
-            flex-direction: column;    
-          }
+            flex-direction: column;
+        }  
     }
 
     &__line {
         border: 2px solid $colour-tertiary;
         width: 2em;
+    }
+}
+
+@keyframes menu_hide {
+    0% { 
+        opacity: 0; 
+    }
+    100% { 
+        opacity: 1; 
     }
 }

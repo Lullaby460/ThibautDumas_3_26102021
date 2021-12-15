@@ -10,7 +10,7 @@
 }
 
 .page{
-    animation: page 0ms 3000ms both;
+    animation: page 0ms $delay both;
 }
 
 .loader{
