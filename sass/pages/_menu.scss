@@ -34,7 +34,7 @@
         animation: menu_hide $anim-dur ease-in-out both;
         @for $i from 1 through 3 {
             &--#{$i} {
-                animation-delay: $delay + ( $anim-dur * $i );
+                animation-delay: $anim-dur * $i;
             }
         }
 

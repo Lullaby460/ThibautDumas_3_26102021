@@ -37,16 +37,14 @@
     }
     &__img {
         object-fit: cover;
-        &__long{
-            object-fit: cover;
-            height: 15em;
-            @include pc{
-                height: 30em;
-            }
-            @include wide{
-                height: 50em;
-            }
+        width: 100%;
+        height: 15em;
+        @include pc{
+            height: 30em;
         }
+        @include wide{
+            height: 50em;
+        }  
     }
 }
 
@@ -160,4 +158,8 @@
         flex: 1;
     }
     
+}
+
+.link {
+    color: white;
 }
